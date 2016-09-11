@@ -1,0 +1,31 @@
+{
+  "name": "veracityjs",
+  "version": "1.0.0",
+  "description": "A object data validator for javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myvertigo/veracityjs.git"
+  },
+  "keywords": [
+    "veracity",
+    "js",
+    "javascript",
+    "veracityjs",
+    "validator",
+    "validation"
+  ],
+  "author": "Christophe Brochard <christophe.brochard@yahoo.fr> (www.myvertigo.fr)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myvertigo/veracityjs/issues"
+  },
+  "homepage": "https://github.com/myvertigo/veracityjs#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}
