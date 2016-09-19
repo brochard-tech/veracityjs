@@ -6,11 +6,11 @@ Veracity JS doesn't require anything. Just add the script into your app like thi
   
 **Basic usage**
 ```javascript
-    var Veracity = require('./veracityjs.min')
+    var Veracity = require('veracityjs')
 ```
 **ES6**
 ```javsacript
-    import Veracity from "./veracityjs.min"
+    import Veracity from "veracityjs"
 ```
 
 ## How to use it
@@ -91,6 +91,13 @@ Here is a complete example for testing all types and all parameters
 | Veracity.Type.Regex | Regular Expression (REQUIRED) | Test if the property match with the regular expression passed by paramaters) |
 | Veracity.Type.AmongValues | Array of values (REQUIRED) | Test if the property match with one of values contained in array passed by parameters) |
 | Veracity.Type.AmongTypes | Array of types (REQUIRED) | Test if the property type match with one of types contained in array passed by parameters) |
+
+
+## Example
+To run test, juste use :
+```
+npm test
+```
 
 ## License
 This plugin is licensed under Creative Commons Attribution 4.0 International License.

@@ -4,7 +4,7 @@
   "description": "A object data validator for javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha test"
   },
   "repository": {
     "type": "git",
