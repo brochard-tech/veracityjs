@@ -1,7 +1,6 @@
 var should      = require('chai').should(),
     Veracity    = require('./../lib/veracity');
 
-
 describe('error preventing', function () {
     var data = {
         data: true
@@ -62,6 +61,8 @@ describe('test with a non object data', function () {
         Veracity.validate({}, Veracity.Type.Object).should.equal(true);
         Veracity.validate(new function() { this.toto = 1 }, Veracity.Type.Object).should.equal(true);
         Veracity.validate(function () { this.toto = 2}, Veracity.Type.Object).should.equal(false);
+        Veracity.validate(0, Veracity.Type.Object).should.equal(false);
+        Veracity.validate([], Veracity.Type.Object).should.equal(false);
     });
 });
 
@@ -131,6 +132,10 @@ describe('the last test of all types in one validation', function () {
         {name: 'regex', type: Veracity.Type.Regex(/price/gi), required: true}
 
     ]).should.equal(true);
+});
 
-
+describe('test unique', function () {
+    it('should be valide', function () {
+        Veracity.validate(false, Veracity.Type.Boolean).should.equal(true);
+    });
 });
