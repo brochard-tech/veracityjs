@@ -1,4 +1,7 @@
 # Veracity JS - Synopsis
+
+[![Build Status](https://travis-ci.org/myvertigo/veracityjs.svg?branch=master)](https://travis-ci.org/myvertigo/veracityjs)
+
 Veracity JS is a plugin for validating your javascript object and ensuring you that the object you have received is consistent with what you want. 
 
 ## Installation
